@@ -1,0 +1,19 @@
+spring:
+  # 数据库配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/wdqhm?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=PRC
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 10
+    maxActive: 40
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 10
+    testOnBorrow: true
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: SELECT 'x'
+    validationQueryTimeout: 3000
